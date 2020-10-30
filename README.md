@@ -104,7 +104,7 @@
       $.ajax({
         type: "GET",
         //YOUR TURN: Replace with csv export link
-        url: '<Replace with csv export link>',
+        url: 'https://docs.google.com/spreadsheets/d/18noqK8zHmlxjnhC4e4CiTy011baJrlhreosBa1SRijE/gviz/tq?tqx=out:csv&sheet=Sheet1',
         dataType: "text",
         success: function (csvData) { makeGeoJSON(csvData); }
       });
@@ -190,7 +190,7 @@
 mapboxgl.accessToken = pk.eyJ1IjoiYWR2MzMiLCJhIjoiY2tndnJwNWg2MDM2cDJ5cDZkeWp3eTJieiJ9.9bKhNCIippR3H0EgbAxZeg;
 var map = new mapboxgl.Map({
        container: 'map', // container id
-       style: mapbox://styles/mapbox/streets-v11, // YOUR TURN: choose a style: https://docs.mapbox.com/api/maps/#styles
+       style: mapbox://styles/mapbox/streets-v11, // YOUR TURN: choose a style: "https://docs.mapbox.com/api/maps/#styles"
        center: [-122.411464, 37.7852299], // starting position [lng, lat]
        zoom: 9 // starting zoom
      });
@@ -198,7 +198,7 @@ var map = new mapboxgl.Map({
           $.ajax({
             type: "GET",
             // YOUR TURN: Replace 'url' value to CSV export link
-            url: https://docs.google.com/spreadsheets/d/18noqK8zHmlxjnhC4e4CiTy011baJrlhreosBa1SRijE/gviz/tq?tqx=out:csv&sheet=Sheet1,
+            url: "https://docs.google.com/spreadsheets/d/18noqK8zHmlxjnhC4e4CiTy011baJrlhreosBa1SRijE/gviz/tq?tqx=out:csv&sheet=Sheet1",
             dataType: "text",
             success: function (csvData) { makeGeoJSON(csvData); }
           });
